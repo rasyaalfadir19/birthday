@@ -35,9 +35,9 @@ const REASONS = [
   "Walaupun kita jarang chatan, nama kamu tetep jadi salah satu yang paling sering aku inget.",
   "Setiap kali HP aku getar, jujur aku selalu ngarep itu dari kamu.",
   "Liat profil kamu lagi online aja kadang udah bikin senyum-senyum sendiri.",
-  "Obrolan singkat kita akhir-akhir ini tetep bikin hariku jadi seru lagi.",
+  "Obrolan singkat sama kamu tetep bikin hariku jadi seru lagi.",
   "Meskipun komunikasi kita gaada, rasa kagumku tetep jalan terus.",
-  "Seneng aja rasanya, walaupun kita lagi jarang ngobrol, aku dapet kesempatan buat ngerayain ulang tahun kamu."
+  "Seneng aja rasanya, walaupun kita jarang ngobrol, aku dapet kesempatan buat ngerayain ulang tahun kamu."
 ];
 
 const QUOTES = [
