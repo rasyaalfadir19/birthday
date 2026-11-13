@@ -11,11 +11,11 @@ const CONFIG = {
 
 Pertama-tama, aku mau ngucapin selamat ulang tahun buat kamu. Semoga di umur yang baru ini, kamu selalu dikasih kesehatan, kebahagiaan, dan semua hal yang lagi kamu impikan bisa satu-satu terwujud dengan baik.
 
-Walaupun sekarang kita jarang banget ngobrol,aku tetep kagum sama kamu. Kamu adalah sosok yang hebat, baik, dan selalu punya cara sendiri buat bikin orang di sekitar kamu terkesan. 
+Walaupun sekarang gapernah ngobrol lagi,aku tetep kagum sama kamu. Kamu adalah sosok yang hebat, baik, dan selalu punya cara sendiri buat bikin orang di sekitar kamu terkesan. 
 
 Makasih banyak ya, karena pernah jadi bagian yang bikin hari-hari aku jadi lebih berwarna dan seru. Kehadiran kamu tuh ngebuat hidup aku lebih berwarna.
 
-Harapanku sederhana aja, semoga kedepannya kita bisa lebih akrab lagi dan mungkin kamu bisa ngebuka hati buat aku ahay srepet. Enjoy your special day, ya`
+I hope that perhaps one day you might open your heart to me hahahah. Enjoy your special day, ya`
 };
 
 const PHOTOS = [
