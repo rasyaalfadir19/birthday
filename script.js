@@ -1,11 +1,8 @@
-// ==========================================================================
-// CONFIGURASI UTAMA
-// ==========================================================================
 const CONFIG = {
   name: "Riska",
   pin: "061026",          
   date: "30 SEPTEMBER • THE MOST SPECIAL DAY",
-  phoneNumber: "+62 82181377058", // Ganti dengan nomor WhatsApp kamu
+  phoneNumber: "+62 82181377058",
   
   letter: `Hai, selamat ulang tahun ya!
 
@@ -56,9 +53,6 @@ const TIMELINE = [
 
 const $ = (id) => document.getElementById(id);
 
-// ==========================================================================
-// SOUND EFFECT "TADA" HADIAH (WEBAUDIO API BAWAAN)
-// ==========================================================================
 function playTadaSound() {
   try {
     const AudioCtx = window.AudioContext || window.webkitAudioContext;
@@ -66,10 +60,10 @@ function playTadaSound() {
     const ctx = new AudioCtx();
 
     const notes = [
-      { f: 523.25, t: 0, d: 0.15 },    // C5
-      { f: 659.25, t: 0.12, d: 0.15 }, // E5
-      { f: 783.99, t: 0.24, d: 0.15 }, // G5
-      { f: 1046.50, t: 0.38, d: 0.6 }   // C6 (Tada!)
+      { f: 523.25, t: 0, d: 0.15 },   
+      { f: 659.25, t: 0.12, d: 0.15 }, 
+      { f: 783.99, t: 0.24, d: 0.15 }, 
+      { f: 1046.50, t: 0.38, d: 0.6 }  
     ];
 
     notes.forEach(n => {
@@ -94,9 +88,6 @@ function playTadaSound() {
   }
 }
 
-// ==========================================================================
-// EFEK PARTIKEL SALJU SELURUH FRAME
-// ==========================================================================
 function initGlobalSnow() {
   const container = $('snow-container');
   const snowFlakes = ['❄', '`', '❆', '•'];
@@ -114,7 +105,6 @@ function initGlobalSnow() {
 }
 initGlobalSnow();
 
-// 1. Tampilan Awal Loading
 setTimeout(() => {
   $('load').classList.add('fade-out');
   setTimeout(() => {
@@ -124,7 +114,6 @@ setTimeout(() => {
   }, 400);
 }, 1800);
 
-// 2. Logika Keypad PIN 6 DIGIT
 let enteredCode = "";
 const pad = $('pad');
 const dots = $('dots');
@@ -164,7 +153,6 @@ const lockSubtitle = document.querySelector('#lock .soft');
   pad.appendChild(btn);
 });
 
-// 3. Logika Buka Hadiah & Efek "Tada" Sound
 $('gb').onclick = () => {
   playTadaSound();
   
@@ -191,12 +179,10 @@ $('gb').onclick = () => {
   }, 1400);
 };
 
-// 4. Nyalakan Lilin Kue
 $('cake').onclick = function() {
   this.classList.toggle('lit');
 };
 
-// 5. Modal Surat
 $('lt').onclick = () => {
   const paper = $('lp');
   paper.innerHTML = `<h3>${CONFIG.name},</h3>`;
@@ -212,7 +198,6 @@ $('lm').onclick = function(e) {
   if (e.target === this) this.hidden = true;
 };
 
-// 6. Buket Bunga Digital & Partikel Kelopak Bunga
 let quoteIndex = 0;
 const spawnPetals = () => {
   const container = $('petal-container');
@@ -244,7 +229,6 @@ const pickFlower = () => {
 $('bp').onclick = pickFlower;
 $('vase').onclick = pickFlower;
 
-// 7. Galeri Foto Polaroid
 const memContainer = $('mem');
 memContainer.innerHTML = '';
 
@@ -278,7 +262,6 @@ PHOTOS.forEach((photo, idx) => {
   memContainer.appendChild(card);
 });
 
-// 8. Timeline Perjalanan Pendekatan
 TIMELINE.forEach(item => {
   const div = document.createElement('div');
   div.className = 'ti';
@@ -286,7 +269,6 @@ TIMELINE.forEach(item => {
   $('tl').appendChild(div);
 });
 
-// 9. Toples Catatan Bersyukur & Partikel Salju Bulat
 let reasonIndex = 0;
 const spawnJarSnow = () => {
   const container = $('jar-snow-container');
@@ -318,7 +300,6 @@ $('jb').onclick = () => {
   }, 350);
 };
 
-// 10. LOGIKA MUSIC PLAYER 
 const audio = $('audio-player');
 let currentSongIndex = 0;
 let isPlaying = false;
@@ -382,7 +363,6 @@ audio.onended = () => {
   $('next-btn').click();
 };
 
-// 11. LOGIKA WHATSAPP REDIRECT
 $('wa-btn').onclick = () => {
   const message = encodeURIComponent("Makasih Sya");
   window.open(`https://wa.me/${CONFIG.phoneNumber}?text=${message}`, '_blank');

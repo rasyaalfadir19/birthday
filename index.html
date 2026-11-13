@@ -5,18 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Selamat Ulang Tahun, Riska!</title>
 
-  <!-- Font dari Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500&family=Quicksand:wght@400;600&family=Caveat:wght@500&display=swap">
-  
-  <!-- Memanggil file CSS terpisah -->
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- PARTIKEL SALJU SELURUH FRAME -->
   <div id="snow-container"></div>
 
-  <!-- ==================== 1. TAMPILAN LOADING ==================== -->
   <div class="stage" id="load">
     <div class="box">
       <div class="fl">💙</div>
@@ -24,25 +20,21 @@
     </div>
   </div>
 
-  <!-- ==================== 2. TAMPILAN PIN / KODE RAHASIA (6 DIGIT) ==================== -->
   <div class="stage" id="lock" hidden>
     <div class="box">
       <div class="pin-card">
         <h2 id="lk">Untukmu</h2>
         <p class="soft">coba tebak berapa pin nya </p>
-        
-        <!-- Indikator 6 Bulatan PIN -->
+
         <div class="dots" id="dots">
           <i></i><i></i><i></i><i></i><i></i><i></i>
         </div>
-        
-        <!-- Keypad PIN -->
+
         <div class="pad" id="pad"></div>
       </div>
     </div>
   </div>
 
-  <!-- ==================== 3. TAMPILAN KOTAK HADIAH ==================== -->
   <div class="stage" id="gift" hidden>
     <div class="box">
       <p class="soft"><em>Ketuk kotak hadiah untuk membukanya 🎁</em></p>
@@ -50,21 +42,17 @@
     </div>
   </div>
 
-  <!-- Efek Partikel Bintang/Bunga Biru -->
   <div id="burst"></div>
 
-  <!-- ==================== 4. KONTEN UTAMA WEBSITE ==================== -->
   <main id="main" hidden class="fade-in-content">
 
-    <!-- SECTION HERO / KUE ULANG TAHUN 3 TINGKAT -->
     <section class="hero">
       <p class="soft">YOUR SPECIAL DAY</p>
       <h1>Happy<br>Birthday<br><span id="hn">Riska</span></h1>
       <p class="date" id="hd">30 SEPTEMBER • THE MOST SPECIAL DAY</p>
       
       <p class="soft" style="margin-top: 20px;">Tap lilin untuk menyalakannya!</p>
-      
-      <!-- SVG Kue 3 Tingkat Presisi -->
+
       <svg class="cake" id="cake" viewBox="0 0 240 240" role="button" aria-label="Nyalakan lilin">
         <ellipse cx="120" cy="225" rx="105" ry="9" fill="#0004"/>
         <rect x="20" y="165" width="200" height="55" rx="10" fill="#b3d1ff"/>
@@ -88,7 +76,6 @@
       <button id="lt">💌 Buka suratku</button>
     </section>
 
-    <!-- SECTION BUKET DIGITAL -->
     <section class="bouquet-section">
       <p class="soft">— MY FIRST GIFT —</p>
       <h2>Digital Bouquet</h2>
@@ -101,7 +88,6 @@
       <button id="bp">Petik bunga 💙</button>
     </section>
 
-    <!-- SECTION GALERI FOTO POLAROID -->
     <section>
       <h2>Someone Special For Me</h2>
       <p class="tag">Ketuk kartu untuk melihat foto</p>
@@ -109,7 +95,6 @@
       <input type="file" id="file" accept="image/*" hidden>
     </section>
 
-    <!-- SECTION JURNAL PERJALANAN / TIMELINE -->
     <section>
       <p class="soft">— OUR STORY —</p>
       <h2>Jurnal Pendekatan Aku Ke Kamu</h2>
@@ -117,7 +102,6 @@
       <div class="tl" id="tl"></div>
     </section>
 
-    <!-- SECTION MUSIC PLAYER -->
     <section class="playlist-section">
       <p class="soft">— MUSIC FORYOU —</p>
       <h2>Our Playlist</h2>
@@ -138,7 +122,6 @@
       </div>
     </section>
 
-    <!-- SECTION TOPLES CATATAN BERSYUKUR -->
     <section class="jar-section">
       <p class="soft">— FROM MY HEART TO YOURS —</p>
       <h2>Reasons I'm Grateful To Know You</h2>
@@ -151,7 +134,6 @@
       <div class="note" id="jn"></div>
     </section>
 
-    <!-- SECTION TOMBOL WHATSAPP -->
     <section class="wa-section">
       <p class="soft">— KIRIM BALASAN —</p>
       <h2>Suka Sama Kejutannya?</h2>
@@ -159,22 +141,18 @@
       <button id="wa-btn" class="wa-btn">💬 Kirim Pesan ke WhatsApp</button>
     </section>
 
-    <!-- FOOTER SAMAR PALING BAWAH -->
     <footer class="subtle-footer">
       <p>Made by Gemini and Me</p>
     </footer>
 
   </main>
 
-  <!-- MODAL SURAT UCAPAN -->
   <div class="modal" id="lm" hidden>
     <div class="paper" id="lp"></div>
   </div>
 
-  <!-- Audio Pemutar Musik -->
   <audio id="audio-player"></audio>
 
-  <!-- Memanggil file JavaScript terpisah -->
   <script src="script.js"></script>
 </body>
 </html>
